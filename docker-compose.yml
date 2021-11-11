@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  backend:
+    build: .
+    ports:
+      - 9000:9000
+  frontend:
+    build: ./react-app
+    ports:
+      - 3000:3000
